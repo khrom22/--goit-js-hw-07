@@ -30,12 +30,11 @@ function handleClick(event) {
             },
         }
     )
-
     instance.show();
-
-    function pressEsc(e) {
+    console.log(instance.visible())
+    function pressEsc(event) {
         const escDown = 'Escape';
-        const isEscDown = e.code === escDown;
+        const isEscDown = event.code === escDown;
         if (!isEscDown) return;
         instance.close();
     }
